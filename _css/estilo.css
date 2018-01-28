@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'FonteLogo';
-    src: url("C:\Users\max\Desktop\LeoJS\projeto-glass-html5\_fonts\bubblegum-sans-regular.otf");
+    src: url('../_fonts/bubblegum-sans-regular.otf');
 }
 
 body {
@@ -35,7 +35,7 @@ header#cabecalho img#icone {
 header#cabecalho {
     border-bottom: 1px #606060 solid;
     height: 150px;
-    background-image: url("C:\Users\max\Desktop\LeoJS\projeto-glass-html5\_imagens\glass-logo-peq.jpg");
+    background-image: url('../_imagens/glass-logo-peq.jpg')no-reapet;
 }
 
 header#cabecalho h1 {
@@ -96,7 +96,7 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 300px;
+    left: 500px;
 }
 
 nav#menu li {
@@ -127,3 +127,39 @@ nav#menu a {
 nav#menu a:hover {
     color: #ffffff;
 }
+
+section#corpo {
+    display: block;
+    width: 520px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+
+table#tabelaspec {
+    border: 1px solid #606060;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaspec td {
+    border: 1px solid #606060;
+    padding: 7px;
+    text-align: center;
+}
+
+aside#lateral {
+    display: block;
+    width: 300px;
+    float: right;
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+    text-align: center;
+}
+
