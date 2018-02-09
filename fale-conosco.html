@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <title>Tudo Sobre Google Glass</title>
-    <link rel="stylesheet" type="text/css" href='_css/estilo.css' />
+    <link rel="stylesheet" href='_css/estilo.css' />
+    <link rel="stylesheet" href="_css/form.css" />
 </head>
 <script language="javascript" src= "_javascript/funcoes.js"></script>
 <body>
@@ -36,34 +37,51 @@
                     <h3 class="direita">Atualizado em 01/Maio/2013</h3>
                 </hgroup>
                 </header>
+<form method="post" id="formContato" >
+<fieldset id="usuario"><legend>Identificacao do Usuario</legend>
+    <p><label for="nome">Nome:</label> <input type="text" name="textName" id="nome" size="30" maxlength="50" placeholder="Nome Completo"/></p>
+    <p><label for="senha">Senha:</label> <input type="password" name="passwordSenha" id="senha" size="30" maxlength="8" placeholder="Criar Passoword"/></p>
+    <p><label for="e-email">E-mail:</label> <input type="email" name="textEmail" id="e-email" size="30" maxlength="30" placeholder="Criar Email"/></p>
+    <fieldset id="sexo"><legend>Sexo</legend>
+        <input type="radio" name="textsexo" id="masculinosexo" /><label for="masculinosexo">Masculino</label> 
+        <input type="radio" name="textsexo" id="femininosexo" /><label for="femininosexo">Feminino</label></fieldset>
+    <p>Data de Nascimento: <input type="date" name="textdate" id="datanacimento" /></p>
+</fieldset>
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
+<fieldset id="endereco"><legend>Endereço do Usuário</legend>
+    <p><label for="enderecos">Logradouro:</label> <input type="text" name="textEndereco" id="enderecos" size="30" maxlength="80" placeholder="Coloque seu Endereco"/></p>
+    <p><label for="numero">Número:</label> <input type="number" name="textNumber" id="numero" min="0" max="9999"/></p>
+    <p><label for="cidade">Cidade:</label> <select name="textCidade" id="cidade">
+        <optgroup>
+            <option selected>Vazio</option>
+            <option >Rio de Janeiro</option>
+            <option >Sao Paulo</option>
+        </optgroup>
+    </select></p>
+    <p><label for="estado">Estado:</label> <select name="textEstado" id="cidade" list="estados">
+        <datalist id="estados">
+        <option value="Rio de Janeiro">RJ</option>
+        <option value="Sao paulo">SP</option>
+    </datalist>
+    </select></p>
+    
+</fieldset>
 
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
+<fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+    <p><label for="urgente">Grau de Urgência:</label> <input/></p>
+    <p><label for="mensagens">Mensagem:</label> <input/></p>
+</fieldset>
 
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
-
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
-
+<fieldset id="pedido"><legend>Quero um Google Glass</legend>
+    <p><label for="pedido">Gostaria de adquirir um Google Glass quando disponível</label></p> 
+    <p><label for="cor">Cor:</label></p>
+        <p><label for="quantidade">Quantidade:</label></p>
+            <p><label for="total">Preço Total: R$</label></p>
+</fieldset>
 
 [BOTÃO ENVIAR]
+</form>
+
         </article>
 <footer id="rodape">
     <p>Copyright &copy; 2013 - by Gustavo Guanabara
